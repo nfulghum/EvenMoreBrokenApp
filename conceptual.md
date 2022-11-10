@@ -3,10 +3,15 @@
 Answer the following questions below:
 
 - What is a JWT?
+  - JWT is a string containing a header, payload, and signautre.
+    - They are used to store data that is signed to be validated at a later point.
 
 - What is the signature portion of the JWT?  What does it do?
+  - Signed using a secret key. The signature is dedicated to a specific header & payload and uses
+    - a specific algorithm in the header.
 
 - If a JWT is intercepted, can the attacker see what's inside the payload?
+  - Yes. you should not store sensitive info in a JWT
 
 - How can you implement authentication with a JWT?  Describe how it works at a high level.
 
@@ -30,3 +35,4 @@ Answer the following questions below:
 
 - Did you prefer using Flask over Express? Why or why not (there is no right
   answer here --- we want to see how you think about technology)?
+
