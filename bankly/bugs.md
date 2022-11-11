@@ -3,4 +3,9 @@
   - jwt.decode(token) = decodes signed JWTs without validating the signatures on the token
 
 - Second Bug:
-  - 
+  - User.authenticate was missing await. 
+  - added await
+
+- Third Bug:
+  - User.delete missing await
+  - added await
